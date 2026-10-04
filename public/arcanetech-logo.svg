@@ -1,0 +1,38 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="36" fill="#0A0A0E"/>
+  <rect x="0.5" y="0.5" width="159" height="159" rx="35.5" stroke="rgba(255,255,255,0.12)"/>
+  <defs>
+    <linearGradient id="at-glow" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#8B5CF6"/>
+      <stop offset="0.5" stopColor="#6366F1"/>
+      <stop offset="1" stopColor="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="at-core" x1="40" y1="30" x2="120" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#FFFFFF"/>
+      <stop offset="1" stopColor="#E2E8F0"/>
+    </linearGradient>
+    <filter id="blur-glow" x="10" y="10" width="140" height="140" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+    </filter>
+  </defs>
+  <!-- Background subtle illumination -->
+  <circle cx="80" cy="80" r="42" fill="url(#at-glow)" opacity="0.4" filter="url(#blur-glow)"/>
+  
+  <!-- Outer Arcane Monolith Geometry -->
+  <polygon points="80,26 128,54 128,106 80,134 32,106 32,54" stroke="url(#at-glow)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  
+  <!-- Inner Neural Echo Lattice -->
+  <polygon points="80,48 108,64 108,96 80,112 52,96 52,64" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="rgba(255,255,255,0.03)" stroke-linejoin="round"/>
+  
+  <!-- Central Pulse Core -->
+  <circle cx="80" cy="80" r="9" fill="url(#at-core)"/>
+  <circle cx="80" cy="80" r="14" stroke="url(#at-glow)" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Radial Tech nodes -->
+  <circle cx="80" cy="26" r="3" fill="#06B6D4"/>
+  <circle cx="128" cy="54" r="3" fill="#6366F1"/>
+  <circle cx="128" cy="106" r="3" fill="#8B5CF6"/>
+  <circle cx="80" cy="134" r="3" fill="#06B6D4"/>
+  <circle cx="32" cy="106" r="3" fill="#6366F1"/>
+  <circle cx="32" cy="54" r="3" fill="#8B5CF6"/>
+</svg>

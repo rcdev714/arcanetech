@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600" role="img" aria-label="Anymarkt">
+  <rect width="1600" height="1600" fill="#020053"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="45" stroke-linecap="butt">
+    <line x1="502" y1="1099" x2="667" y2="933"/>
+    <line x1="933" y1="667" x2="1095" y2="503"/>
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="236" y="1099" width="266" height="266"/>
+    <rect x="667" y="667" width="266" height="266"/>
+    <rect x="1095" y="237" width="266" height="266"/>
+  </g>
+</svg>

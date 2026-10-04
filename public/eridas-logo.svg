@@ -1,0 +1,27 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="36" fill="#051311"/>
+  <rect x="0.5" y="0.5" width="159" height="159" rx="35.5" stroke="rgba(16,185,129,0.2)"/>
+  <defs>
+    <linearGradient id="eridas-emerald" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#10B981"/>
+      <stop offset="0.5" stopColor="#06B6D4"/>
+      <stop offset="1" stopColor="#3B82F6"/>
+    </linearGradient>
+    <filter id="eridas-blur" x="15" y="15" width="130" height="130" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+    </filter>
+  </defs>
+  <!-- Ambient Security Glow -->
+  <circle cx="80" cy="80" r="38" fill="url(#eridas-emerald)" opacity="0.3" filter="url(#eridas-blur)"/>
+  
+  <!-- Cyber Aegis Shield Outline -->
+  <path d="M80 26L124 44V82C124 109 105 131 80 138C55 131 36 109 36 82V44L80 26Z" stroke="url(#eridas-emerald)" stroke-width="2.5" fill="rgba(16,185,129,0.04)" stroke-linejoin="round"/>
+  
+  <!-- Inner Cryptographic Vault Facet -->
+  <path d="M80 44L108 55V82C108 100 96 115 80 120C64 115 52 100 52 82V55L80 44Z" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+  
+  <!-- Center Core Key / Sentinel -->
+  <circle cx="80" cy="74" r="8" fill="#10B981"/>
+  <path d="M80 82V98" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 90H85" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
