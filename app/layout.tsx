@@ -1,8 +1,22 @@
 import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
+import { Newsreader, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
+const display = Newsreader({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sans = Source_Sans_3({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
 export const viewport: Viewport = {
-  themeColor: "#08080C",
+  themeColor: "#0A0C10",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -11,32 +25,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://arcanetechnologies.org"),
   title: {
-    default: "ArcaneTech | Frontier AI Systems & Applied Intelligence Lab",
-    template: "%s | ArcaneTech — Arcane Echos Technologies",
+    default: "ArcaneTech | We turn intelligence into leverage",
+    template: "%s | ArcaneTech",
   },
   description:
-    "Arcane Echos Technologies SAS (ArcaneTech) is an elite frontier AI research & software laboratory building autonomous systems, corporate registry intelligence networks, and deterministic dependency-security software for a global economy. Operating as a SAS corporation under Ecuadorian jurisdiction.",
+    "Arcane Echos Technologies SAS is a frontier AI laboratory in Ecuador. Live systems: Global Data Capital, Anymarkt, and Eridas.",
   applicationName: "ArcaneTech",
   authors: [{ name: "Arcane Echos Technologies SAS", url: "https://arcanetechnologies.org" }],
-  generator: "Next.js",
   keywords: [
     "ArcaneTech",
     "Arcane Echos Technologies",
-    "Frontier AI Lab",
     "Global Data Capital",
-    "GDC",
-    "Camella",
-    "AnyMarkt",
+    "Anymarkt",
+    "Predict the future. Prove it.",
+    "prediction markets for AI agents",
     "Eridas",
-    "Erydas",
-    "dependency security",
-    "OSV",
-    "B2B Company Search",
-    "Prediction Markets",
     "Model Context Protocol",
-    "MCP Server",
-    "Autonomous Agents",
-    "AI Cybersecurity",
     "LOPDP",
   ],
   creator: "Arcane Echos Technologies SAS",
@@ -49,15 +53,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://arcanetechnologies.org",
     languages: {
-      "es": "https://arcanetechnologies.org?lang=es",
-      "en": "https://arcanetechnologies.org?lang=en",
+      es: "https://arcanetechnologies.org?lang=es",
+      en: "https://arcanetechnologies.org?lang=en",
       "x-default": "https://arcanetechnologies.org",
     },
   },
   openGraph: {
-    title: "ArcaneTech | Frontier AI Systems & Applied Intelligence Lab",
+    title: "ArcaneTech | We turn intelligence into leverage",
     description:
-      "Arcane Echos Technologies SAS (ArcaneTech) engineers high-leverage AI products: Global Data Capital (B2B registry intelligence across the Americas), AnyMarkt (social prediction groups), and Eridas (deterministic self-healing dependency security).",
+      "A frontier AI laboratory. Global Data Capital, Anymarkt (predict the future, prove it), and Eridas.",
     url: "https://arcanetechnologies.org",
     siteName: "ArcaneTech",
     images: [
@@ -74,9 +78,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ArcaneTech | Frontier AI Systems",
-    description:
-      "Frontier AI products by Arcane Echos Technologies SAS: Global Data Capital, AnyMarkt, and Eridas.",
+    title: "ArcaneTech | We turn intelligence into leverage",
+    description: "Frontier AI laboratory. Global Data Capital, Anymarkt, Eridas.",
     images: ["/arcanetech-logo.svg"],
   },
   robots: {
@@ -97,69 +100,57 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
         "@id": "https://arcanetechnologies.org/#organization",
-        "name": "Arcane Echos Technologies SAS",
-        "alternateName": ["ArcaneTech", "Arcane Echos"],
-        "url": "https://arcanetechnologies.org",
-        "logo": "https://arcanetechnologies.org/arcanetech-logo.svg",
-        "email": "contact@arcanetechnologies.org",
-        "description":
-          "Frontier AI engineering laboratory developing intelligent multi-country registry search, social prediction platforms, and deterministic dependency-security software. Operating as a SAS corporation under Ecuadorian jurisdiction.",
-        "foundingLocation": {
+        name: "Arcane Echos Technologies SAS",
+        alternateName: ["ArcaneTech", "Arcane Echos"],
+        url: "https://arcanetechnologies.org",
+        logo: "https://arcanetechnologies.org/arcanetech-logo.svg",
+        email: "contact@arcanetechnologies.org",
+        description:
+          "Frontier AI laboratory developing Global Data Capital, Anymarkt, and Eridas. SAS corporation under Ecuadorian jurisdiction.",
+        foundingLocation: {
           "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "EC",
-          },
+          address: { "@type": "PostalAddress", addressCountry: "EC" },
         },
-        "sameAs": [
+        sameAs: [
           "https://globaldatacapital.com",
           "https://anymarkt.com",
           "https://erydas.vercel.app",
         ],
-        "knowsAbout": [
+        knowsAbout: [
           "Artificial Intelligence",
           "Model Context Protocol",
-          "Dependency Security",
-          "OSV",
+          "Prediction markets for AI agents",
           "B2B Registry Intelligence",
-          "Prediction Markets",
+          "Dependency Security",
         ],
       },
       {
         "@type": "WebSite",
         "@id": "https://arcanetechnologies.org/#website",
-        "url": "https://arcanetechnologies.org",
-        "name": "ArcaneTech",
-        "publisher": {
-          "@id": "https://arcanetechnologies.org/#organization",
-        },
-        "inLanguage": ["es", "en"],
+        url: "https://arcanetechnologies.org",
+        name: "ArcaneTech",
+        publisher: { "@id": "https://arcanetechnologies.org/#organization" },
+        inLanguage: ["es", "en"],
       },
     ],
   };
 
   return (
-    <html lang="es" className="h-full scroll-smooth dark">
+    <html lang="en" className={`${display.variable} ${sans.variable} h-full`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#07070A] text-[#F3F4F6] antialiased selection:bg-[#6366F1]/30 selection:text-white">
-        {children}
-      </body>
+      <body className="flex min-h-full flex-col antialiased">{children}</body>
     </html>
   );
 }

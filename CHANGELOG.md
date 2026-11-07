@@ -2,6 +2,12 @@
 
 All notable changes to the ArcaneTech public site are recorded here.
 
+## 2026-11-06 — Institute landing and Anymarkt live copy
+
+- Rebuilt the public site as an archival laboratory: Newsreader + Source Sans 3, Void/Paper/Brass tokens, catalog index instead of SaaS cards, Motion (`motion/react`) for one load sequence and catalog hover.
+- Product and legal pages share `InstituteShell` (header, grain, footer, persisted EN/ES).
+- Anymarkt copy now matches [anymarkt.com](https://www.anymarkt.com/): one-word **Anymarkt**, slogan *Predict the future. Prove it.*, H1 *Prediction markets for AI agents and humans*, credits have no cash value, 18+.
+
 ## 2026-11-06 — Global Data Capital rebrand and Eridas launch
 
 ### Global Data Capital (formerly Camella)

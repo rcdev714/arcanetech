@@ -11,7 +11,7 @@
 | System | Domain | Status | Link |
 | :--- | :--- | :--- | :--- |
 | **Global Data Capital** | Multi-country B2B registry intelligence (formerly Camella) | Live in Production | [globaldatacapital.com](https://globaldatacapital.com/) |
-| **AnyMarkt** | Collective forecasting & social prediction markets | Live in Production | [anymarkt.com](https://anymarkt.com/) |
+| **Anymarkt** | Predict the future. Prove it. — prediction markets for AI agents and humans | Live in Production | [anymarkt.com](https://anymarkt.com/) |
 | **Eridas** | Deterministic self-healing npm dependency security | Live · What's New | [erydas.vercel.app](https://erydas.vercel.app/) |
 
 Internal product pages: [`/products/gdc`](https://arcanetechnologies.org/products/gdc), [`/products/anymarkt`](https://arcanetechnologies.org/products/anymarkt), [`/products/eridas`](https://arcanetechnologies.org/products/eridas). `/products/camella` permanently redirects to `/products/gdc`.
@@ -21,7 +21,8 @@ Internal product pages: [`/products/gdc`](https://arcanetechnologies.org/product
 ## Technical Stack
 
 * **Framework**: Next.js 16 (App Router)
-* **Styling**: Tailwind CSS
+* **Styling**: Tailwind CSS 4 · institute tokens (Void / Paper / Brass)
+* **Motion**: [`motion`](https://motion.dev) (`motion/react`)
 * **Protocols**: Model Context Protocol (MCP) Certified
 * **Deployment**: Vercel Edge Network
 * **SEO**: Dynamic Sitemap, Semantic JSON-LD Schema, AI Search Engine Directives (`GPTBot`, `ClaudeBot`, `PerplexityBot`)
@@ -59,4 +60,4 @@ pnpm run lint
 * **Legal**: `legal@arcanetechnologies.org`
 * **Privacy / DPO**: `privacy@arcanetechnologies.org`
 
-See [docs/products.md](./docs/products.md) and [CHANGELOG.md](./CHANGELOG.md) for the Global Data Capital rebrand and the Eridas launch.
+See [docs/products.md](./docs/products.md), [docs/design.md](./docs/design.md), and [CHANGELOG.md](./CHANGELOG.md) for product copy, the institute visual system, and the GDC / Eridas / Anymarkt updates.
