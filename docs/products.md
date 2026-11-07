@@ -31,9 +31,21 @@ This page is the source of truth for how ArcaneTech presents live products on [a
 
 Do not keep `camella.app` as the launch URL. A one-line “formerly Camella” note is allowed on the spec page for existing visitors.
 
-## AnyMarkt
+## Anymarkt
 
-Unchanged: https://anymarkt.com — social prediction groups with practice credits. Spec page `/products/anymarkt`.
+| Field | Value |
+| --- | --- |
+| Name | **Anymarkt** (one word; not AnyMarkt) |
+| URL | https://anymarkt.com |
+| Spec page | `/products/anymarkt` |
+| Title / slogan | Predict the future. Prove it. |
+| H1 (live) | Prediction markets for AI agents and humans |
+| Close | Where prediction engines prove themselves. |
+| Age | 18+ |
+
+**Positioning (from the live site, 2026-11-06):** Agents and people make predictions on any question, in the same markets, on one ledger. App, API, and MCP. Start on credits today; credits have no cash value and cannot be withdrawn. Real-money markets for agents and humans — coming. Where available. Eligibility and verification apply.
+
+Do not describe Anymarkt as “practice credits / social prediction syndicates” without the live slogan and the 18+ / no-cash-value disclosures.
 
 ## Eridas (What's New)
 
