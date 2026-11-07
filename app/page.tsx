@@ -18,9 +18,15 @@ const COPY = {
     open: "Open",
     spec: "Specification",
     dispatchKicker: "Dispatch",
-    dispatchTitle: "Eridas is in production.",
+    dispatchTitle: "Eridas is self-healing software.",
     dispatchBody:
-      "The easiest way to keep your dependencies up to date. Deterministic scans against OSV, verified fixes, an open-source CLI, and Eridas Cloud — GitHub App, API, TypeScript SDK, and MCP. Optional AI explains findings. It never invents vulnerabilities or picks versions.",
+      "Deterministic self-healing software for npm. AppSec closes disclosed lockfile vulns against OSV and ships the smallest verified fix as a pull request. OpSec is a passive recon of what the live app leaks. It never invents findings.",
+    appsecTitle: "AppSec",
+    appsecBody:
+      "Treat package-lock.json as inventory. Exact installed versions — direct and transitive — matched to disclosed OSV advisories. Plan the minimum bump, disable lifecycle scripts while the lockfile regenerates, rescan, then restore both files if verification fails. Read-only until you opt into a PR. Majors stay blocked unless you opt in.",
+    opsecTitle: "OpSec",
+    opsecBody:
+      "Tinfoil is GET-only recon of the running product. L1 Surface: headers, CSP, CORS, AI crawlers, llms.txt. L2 Exposure (default): .env, .git, source maps, secrets in bundles. L3 Supply chain: OSV on announced packages or a lockfile. L4 Reconstruction: what an attacker’s agent can rebuild (local only). Private and loopback addresses are refused.",
     openEridas: "Open Eridas",
     thesisTitle: "What we believe",
     thesisLede: "The value of a model is not conversation. It is compounding execution, grounded in sources that do not invent.",
@@ -35,7 +41,7 @@ const COPY = {
       },
       {
         title: "Deterministic supply chain",
-        text: "Exact lockfile versions against OSV. The smallest verified bump. No invented CVEs, no model-chosen versions.",
+        text: "AppSec on the lockfile, OpSec on the live app. Exact versions against OSV. The smallest verified bump. No invented CVEs, no model-chosen versions.",
       },
     ],
     legalTitle: "The corporation",
@@ -56,9 +62,15 @@ const COPY = {
     open: "Abrir",
     spec: "Especificación",
     dispatchKicker: "Despacho",
-    dispatchTitle: "Eridas está en producción.",
+    dispatchTitle: "Eridas es software auto-reparable.",
     dispatchBody:
-      "La forma más simple de mantener las dependencias al día. Escaneos deterministas contra OSV, correcciones verificadas, CLI de código abierto y Eridas Cloud — GitHub App, API, SDK TypeScript y MCP. La IA opcional explica hallazgos. Nunca inventa vulnerabilidades ni elige versiones.",
+      "Software auto-reparable y determinista para npm. AppSec cierra vulnerabilidades divulgadas del lockfile contra OSV y envía el menor fix verificado como pull request. OpSec es un reconocimiento pasivo de lo que filtra la app en vivo. Nunca inventa hallazgos.",
+    appsecTitle: "AppSec",
+    appsecBody:
+      "El package-lock.json es el inventario. Versiones exactas — directas y transitivas — contrastadas con avisos OSV divulgados. Planifica el menor bump, desactiva scripts de ciclo de vida al regenerar el lockfile, reescanea y restaura ambos archivos si falla la verificación. Solo lectura hasta que opte por un PR. Los majors quedan bloqueados salvo que los autorice.",
+    opsecTitle: "OpSec",
+    opsecBody:
+      "Tinfoil es reconocimiento GET-only del producto en ejecución. L1 Superficie: cabeceras, CSP, CORS, crawlers de IA, llms.txt. L2 Exposición (por defecto): .env, .git, source maps, secretos en bundles. L3 Cadena de suministro: OSV sobre paquetes anunciados o un lockfile. L4 Reconstrucción: lo que un agente atacante puede reconstruir (solo local). Se rechazan direcciones privadas y loopback.",
     openEridas: "Abrir Eridas",
     thesisTitle: "En qué creemos",
     thesisLede: "El valor de un modelo no es la conversación. Es ejecución que se acumula, anclada a fuentes que no inventan.",
@@ -73,7 +85,7 @@ const COPY = {
       },
       {
         title: "Cadena de suministro determinista",
-        text: "Versiones exactas del lockfile contra OSV. El menor bump verificado. Sin CVEs inventados ni versiones elegidas por el modelo.",
+        text: "AppSec sobre el lockfile, OpSec sobre la app en vivo. Versiones exactas contra OSV. El menor bump verificado. Sin CVEs inventados ni versiones elegidas por el modelo.",
       },
     ],
     legalTitle: "La sociedad",
@@ -104,7 +116,7 @@ const SYSTEMS = {
     },
     {
       name: "Eridas",
-      line: "The easiest way to keep your dependencies up to date.",
+      line: "Deterministic self-healing software.",
       host: "erydas.vercel.app",
       href: "https://erydas.vercel.app/",
       spec: "/products/eridas",
@@ -130,7 +142,7 @@ const SYSTEMS = {
     },
     {
       name: "Eridas",
-      line: "La forma más simple de mantener las dependencias al día.",
+      line: "Software auto-reparable y determinista.",
       host: "erydas.vercel.app",
       href: "https://erydas.vercel.app/",
       spec: "/products/eridas",
@@ -237,6 +249,16 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-7 md:col-start-6">
             <p className="max-w-[38rem] text-lg leading-8 text-[var(--mute)]">{t.dispatchBody}</p>
+            <div className="mt-12 grid max-w-[38rem] grid-cols-1 gap-10 sm:grid-cols-2">
+              <article>
+                <h3 className="display text-2xl">{t.appsecTitle}</h3>
+                <p className="mt-3 leading-7 text-[var(--mute)]">{t.appsecBody}</p>
+              </article>
+              <article>
+                <h3 className="display text-2xl">{t.opsecTitle}</h3>
+                <p className="mt-3 leading-7 text-[var(--mute)]">{t.opsecBody}</p>
+              </article>
+            </div>
             <div className="mt-8 flex flex-wrap gap-8 text-sm">
               <a
                 href="https://erydas.vercel.app/"

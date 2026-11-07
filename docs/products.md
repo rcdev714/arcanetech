@@ -55,18 +55,32 @@ Do not describe Anymarkt as “practice credits / social prediction syndicates�
 | URL | https://erydas.vercel.app |
 | Spec page | `/products/eridas` |
 | Mark | `public/eridas-logo.svg` (teal E, aligned to Eridas Cloud brand tokens `#0B6B6E` / `#C9F5F7`) |
-| Tagline | The easiest way to keep your dependencies up to date |
-| Subhead | Deterministic self-healing software |
+| Tagline | Deterministic self-healing software |
+| Live title | AppSec, OpSec, and cyber supply-chain security |
 | Advisory truth | https://osv.dev |
 
-Eridas is **live**, not a private agent-defense alpha. Do not describe prompt-injection firewalls, zero-trust MCP proxies, or cryptographic provenance trails.
+Eridas is **live**, not a private agent-defense alpha. Lead with self-healing software, then AppSec and OpSec. Do not describe prompt-injection firewalls, zero-trust MCP proxies, or cryptographic provenance trails. Do not use “the easiest way to keep your dependencies up to date” as the primary line.
 
-**Surface (from the live product and repo):**
+**AppSec — close disclosed dependency risk**
 
-1. **Open-source CLI** — no account. `npx eridas scan .`, `fix` (`--dry-run` / `--yes` / `--force`), `init`, `tinfoil`. npm `package-lock.json` v2/v3 only.
-2. **Eridas Cloud** — GitHub App, dashboard (Guided / Dev), isolated worktree fix PRs, lifecycle queued → running → open → merged. Never pushes to the default branch.
-3. **API / SDK / MCP** — `/api/v1` (scans, findings, remediations, repo sync, git-status, package-root, `?wait=true`), `@eridas/cloud-sdk`, `@eridas/mcp`, CLI `eridas auth login` then `eridas cloud …`. Keys `erd_…`.
-4. **Tinfoil** — live-site scan levels: L1 Surface, L2 Exposure (default), L3 Supply chain (OSV), L4 Reconstruction (REA, local only). Also `POST /api/v1/tinfoil`.
-5. **Trust boundary** — lockfile + OSV decide vulns and versions. Optional AI explains confirmed findings only.
+- `package-lock.json` (lockfileVersion 2 or 3) is inventory. Exact installed versions, direct and transitive.
+- OSV is the only advisory truth. AI may explain a confirmed hit; it cannot invent a CVE or pick a version.
+- Smallest safe bump; majors blocked unless `--allow-major`. Lifecycle scripts off while the lockfile regenerates. Manifest and lockfile restore together if verification fails.
+- Read-only until a PR. `fix` prints a plan first. `--force` skips the prompt only.
 
-Homepage `#whats-new` must stay aligned with this list. Deep links on the spec page should point at the live app (`/docs`, `/scan`, `/how-it-works`, `/scan-levels`, `/agents`, `/llms.txt`).
+**OpSec — see what the live product leaks**
+
+Tinfoil is passive, GET-only recon. Private, loopback, and metadata addresses are refused. Default is Level 2. Each level includes the ones below.
+
+- L1 Surface — headers, CSP, CORS, AI crawlers, llms.txt
+- L2 Exposure — .env, .git, source maps, secrets in bundles
+- L3 Supply chain — OSV on announced packages or a lockfile
+- L4 Reconstruction — what an attacker’s agent can rebuild (local only)
+
+**Also on the live surface**
+
+1. **Open-source CLI** — no account. `npx eridas scan .`, `fix`, `init`, `tinfoil`.
+2. **Eridas Cloud** — GitHub App, isolated worktree fix PRs, lifecycle queued → running → open → merged. Never a silent push to default.
+3. **API / SDK / MCP** — `/api/v1`, `@eridas/cloud-sdk`, `@eridas/mcp`, portable `SKILL.md`. Keys `erd_…`.
+
+Homepage `#dispatch` must name AppSec and OpSec. Deep links on the spec page should point at the live app (`/docs`, `/scan`, `/how-it-works`, `/scan-levels`, `/agents`, `/llms.txt`).

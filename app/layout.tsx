@@ -133,6 +133,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           "Prediction markets for AI agents",
           "B2B Registry Intelligence",
           "Dependency Security",
+          "Application Security",
+          "Operations Security",
+          "Self-healing software",
         ],
       },
       {

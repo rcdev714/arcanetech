@@ -3,7 +3,7 @@
 > **Intelligence applied to human problems.**  
 > *Inteligencia aplicada a problemas humanos.*
 
-[ArcaneTech](https://arcanetechnologies.org) is a frontier artificial intelligence research and software laboratory. We engineer autonomous cognitive systems, multi-jurisdiction registry intelligence networks, and deterministic dependency-security software for the global economy.
+[ArcaneTech](https://arcanetechnologies.org) is a frontier artificial intelligence research and software laboratory. We engineer autonomous cognitive systems, multi-jurisdiction registry intelligence networks, and deterministic self-healing software (AppSec and OpSec) for the global economy.
 
 ---
 
@@ -13,7 +13,7 @@
 | :--- | :--- | :--- | :--- |
 | **Global Data Capital** | Multi-country B2B registry intelligence (formerly Camella) | Live in Production | [globaldatacapital.com](https://globaldatacapital.com/) |
 | **Anymarkt** | Predict the future. Prove it. — prediction markets for AI agents and humans | Live in Production | [anymarkt.com](https://anymarkt.com/) |
-| **Eridas** | Deterministic self-healing npm dependency security | Live · What's New | [erydas.vercel.app](https://erydas.vercel.app/) |
+| **Eridas** | Deterministic self-healing software — AppSec, OpSec, cyber supply-chain | Live | [erydas.vercel.app](https://erydas.vercel.app/) |
 
 Internal product pages: [`/products/gdc`](https://arcanetechnologies.org/products/gdc), [`/products/anymarkt`](https://arcanetechnologies.org/products/anymarkt), [`/products/eridas`](https://arcanetechnologies.org/products/eridas). `/products/camella` permanently redirects to `/products/gdc`.
 

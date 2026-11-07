@@ -2,6 +2,12 @@
 
 All notable changes to the ArcaneTech public site are recorded here.
 
+## 2026-11-06 — Eridas as self-healing software (AppSec + OpSec)
+
+- Catalog and dispatch now lead with **deterministic self-healing software**, matching [erydas.vercel.app](https://erydas.vercel.app/).
+- Homepage dispatch and `/products/eridas` document **AppSec** (lockfile inventory, OSV-only advisories, smallest verified bump, PR-only mutation) and **OpSec** (Tinfoil L1 Surface, L2 Exposure default, L3 Supply chain, L4 Reconstruction).
+- Dropped “the easiest way to keep your dependencies up to date” as the primary line.
+
 ## 2026-11-06 — Institute landing and Anymarkt live copy
 
 - Laboratory motto is *Intelligence applied to human problems.* / *Inteligencia aplicada a problemas humanos.* (hero, title, Open Graph, JSON-LD `slogan`).

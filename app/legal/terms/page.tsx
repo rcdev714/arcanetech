@@ -59,8 +59,8 @@ export default function TermsOfUsePage() {
           <h3 className="mt-8 text-[var(--paper)]">C. Eridas (erydas.vercel.app)</h3>
           <p className="mt-3 leading-7 text-[var(--mute)]">
             {en
-              ? "Eridas is deterministic dependency-security software (open-source CLI, Cloud API, SDK, and MCP). It matches exact lockfile versions to disclosed OSV advisories and proposes verified fixes. It does not warrant the absence of undisclosed vulnerabilities and does not cover unsupported ecosystems (npm lockfile v2/v3 in the current release). Software is provided as-is."
-              : "Eridas es software de seguridad de dependencias determinista (CLI de código abierto, Cloud API, SDK y MCP). Contrasta versiones exactas del lockfile con avisos divulgados en OSV y propone correcciones verificadas. No garantiza la ausencia de vulnerabilidades no divulgadas, ni cubre ecosistemas no soportados (npm lockfile v2/v3). El software se ofrece tal cual."}
+              ? "Eridas is deterministic self-healing software for AppSec, OpSec, and cyber supply-chain security (open-source CLI, Cloud API, SDK, and MCP). AppSec matches exact lockfile versions to disclosed OSV advisories and proposes verified fixes. OpSec (Tinfoil) is a passive recon of a live app and does not warrant a complete map of exposure. Eridas does not warrant the absence of undisclosed vulnerabilities and does not cover unsupported ecosystems (npm lockfile v2/v3 in the current release). Software is provided as-is."
+              : "Eridas es software auto-reparable y determinista para AppSec, OpSec y seguridad de la cadena de suministro (CLI de código abierto, Cloud API, SDK y MCP). AppSec contrasta versiones exactas del lockfile con avisos OSV divulgados y propone correcciones verificadas. OpSec (Tinfoil) es un reconocimiento pasivo de una app en vivo y no garantiza un mapa completo de exposición. No garantiza la ausencia de vulnerabilidades no divulgadas, ni cubre ecosistemas no soportados (npm lockfile v2/v3). El software se ofrece tal cual."}
           </p>
         </section>
 

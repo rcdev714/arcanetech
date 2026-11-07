@@ -4,14 +4,14 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "Eridas",
   description:
-    "The easiest way to keep your dependencies up to date. Deterministic self-healing software: open-source CLI, Eridas Cloud, API, TypeScript SDK, MCP, and Tinfoil site scans. Live at erydas.vercel.app.",
+    "Deterministic self-healing software. AppSec closes disclosed npm lockfile vulns against OSV. OpSec (Tinfoil L1–L4) scans what a live app leaks. GitHub App, API, SDK, and MCP. Live at erydas.vercel.app.",
   alternates: {
     canonical: "https://arcanetechnologies.org/products/eridas",
   },
   openGraph: {
-    title: "Eridas | ArcaneTech",
+    title: "Eridas | Self-healing software",
     description:
-      "Deterministic npm dependency security. OSV scans, verified fixes, GitHub App, Cloud API, SDK, and MCP.",
+      "Deterministic self-healing software: AppSec on the lockfile, OpSec on the live app. OSV truth, Tinfoil L1–L4, verified fix PRs.",
     url: "https://arcanetechnologies.org/products/eridas",
   },
 };
