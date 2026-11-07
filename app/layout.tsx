@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | ArcaneTech — Arcane Echos Technologies",
   },
   description:
-    "Arcane Echos Technologies SAS (ArcaneTech) is an elite frontier AI research & software laboratory building autonomous systems, corporate registry intelligence networks, and agent defense protocols for a global economy. Operating as a SAS corporation under Ecuadorian jurisdiction.",
+    "Arcane Echos Technologies SAS (ArcaneTech) is an elite frontier AI research & software laboratory building autonomous systems, corporate registry intelligence networks, and deterministic dependency-security software for a global economy. Operating as a SAS corporation under Ecuadorian jurisdiction.",
   applicationName: "ArcaneTech",
   authors: [{ name: "Arcane Echos Technologies SAS", url: "https://arcanetechnologies.org" }],
   generator: "Next.js",
@@ -23,11 +23,14 @@ export const metadata: Metadata = {
     "ArcaneTech",
     "Arcane Echos Technologies",
     "Frontier AI Lab",
+    "Global Data Capital",
+    "GDC",
     "Camella",
-    "Camella App",
     "AnyMarkt",
     "Eridas",
-    "AI Agent Security",
+    "Erydas",
+    "dependency security",
+    "OSV",
     "B2B Company Search",
     "Prediction Markets",
     "Model Context Protocol",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ArcaneTech | Frontier AI Systems & Applied Intelligence Lab",
     description:
-      "Arcane Echos Technologies SAS (ArcaneTech) engineers high-leverage AI products: Camella (B2B registry intelligence across the Americas), AnyMarkt (social prediction groups), and Eridas (autonomous agent defense).",
+      "Arcane Echos Technologies SAS (ArcaneTech) engineers high-leverage AI products: Global Data Capital (B2B registry intelligence across the Americas), AnyMarkt (social prediction groups), and Eridas (deterministic self-healing dependency security).",
     url: "https://arcanetechnologies.org",
     siteName: "ArcaneTech",
     images: [
@@ -73,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ArcaneTech | Frontier AI Systems",
     description:
-      "Frontier AI products by Arcane Echos Technologies SAS: Camella, AnyMarkt, and Eridas.",
+      "Frontier AI products by Arcane Echos Technologies SAS: Global Data Capital, AnyMarkt, and Eridas.",
     images: ["/arcanetech-logo.svg"],
   },
   robots: {
@@ -111,7 +114,7 @@ export default function RootLayout({
         "logo": "https://arcanetechnologies.org/arcanetech-logo.svg",
         "email": "contact@arcanetechnologies.org",
         "description":
-          "Frontier AI engineering laboratory developing intelligent multi-country registry search, social prediction platforms, and autonomous cybersecurity defense systems. Operating as a SAS corporation under Ecuadorian jurisdiction.",
+          "Frontier AI engineering laboratory developing intelligent multi-country registry search, social prediction platforms, and deterministic dependency-security software. Operating as a SAS corporation under Ecuadorian jurisdiction.",
         "foundingLocation": {
           "@type": "Place",
           "address": {
@@ -120,13 +123,15 @@ export default function RootLayout({
           },
         },
         "sameAs": [
-          "https://camella.app",
+          "https://globaldatacapital.com",
           "https://anymarkt.com",
+          "https://erydas.vercel.app",
         ],
         "knowsAbout": [
           "Artificial Intelligence",
           "Model Context Protocol",
-          "Agent Defense Systems",
+          "Dependency Security",
+          "OSV",
           "B2B Registry Intelligence",
           "Prediction Markets",
         ],

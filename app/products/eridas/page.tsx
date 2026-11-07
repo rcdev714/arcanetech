@@ -6,22 +6,11 @@ import { useState } from "react";
 
 export default function EridasProductPage() {
   const [lang, setLang] = useState<"es" | "en">("es");
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email.trim()) {
-      setSubmitted(true);
-    }
-  };
 
   return (
     <div className="relative min-h-screen flex flex-col bg-[#07070A] text-[#F3F4F6] tech-grid">
-      {/* Top Ambient Security Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-[radial-gradient(ellipse_60%_40%_at_50%_-10%,rgba(16,185,129,0.2),transparent_70%)] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-[radial-gradient(ellipse_60%_40%_at_50%_-10%,rgba(11,107,110,0.28),transparent_70%)] pointer-events-none" />
 
-      {/* Nav */}
       <header className="sticky top-0 z-50 border-b border-[rgba(255,255,255,0.08)] backdrop-blur-xl bg-[#07070A]/80">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -32,7 +21,7 @@ export default function EridasProductPage() {
             <span className="text-[rgba(255,255,255,0.2)]">/</span>
             <div className="flex items-center gap-2">
               <Image src="/eridas-logo.svg" alt="Eridas" width={20} height={20} className="rounded" />
-              <span className="text-xs font-mono font-medium text-emerald-400">Eridas</span>
+              <span className="text-xs font-mono font-medium text-teal-300">Eridas</span>
             </div>
           </div>
 
@@ -41,7 +30,7 @@ export default function EridasProductPage() {
               <button
                 onClick={() => setLang("es")}
                 className={`px-2.5 py-0.5 rounded-full text-[11px] font-mono transition ${
-                  lang === "es" ? "bg-emerald-600 text-white" : "text-white/50 hover:text-white"
+                  lang === "es" ? "bg-teal-700 text-white" : "text-white/50 hover:text-white"
                 }`}
               >
                 ES
@@ -49,7 +38,7 @@ export default function EridasProductPage() {
               <button
                 onClick={() => setLang("en")}
                 className={`px-2.5 py-0.5 rounded-full text-[11px] font-mono transition ${
-                  lang === "en" ? "bg-emerald-600 text-white" : "text-white/50 hover:text-white"
+                  lang === "en" ? "bg-teal-700 text-white" : "text-white/50 hover:text-white"
                 }`}
               >
                 EN
@@ -57,178 +46,268 @@ export default function EridasProductPage() {
             </div>
 
             <a
-              href="#waitlist"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium text-black bg-emerald-400 hover:bg-emerald-300 font-mono shadow-lg shadow-emerald-500/20 transition-all"
+              href="https://erydas.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium text-black bg-[#C9F5F7] hover:bg-white font-mono shadow-lg shadow-teal-500/10 transition-all"
             >
-              <span>{lang === "es" ? "Solicitar Acceso" : "Request Access"}</span>
+              <span>{lang === "es" ? "Abrir Eridas" : "Launch Eridas"}</span>
             </a>
           </div>
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-1 max-w-6xl mx-auto px-6 py-16 w-full">
-        {/* Breadcrumb & status */}
         <div className="flex items-center gap-3 mb-6">
           <Link href="/" className="text-xs font-mono text-white/50 hover:text-white transition">
             ← {lang === "es" ? "Inicio ArcaneTech" : "ArcaneTech Home"}
           </Link>
           <span className="text-white/20">|</span>
-          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-[11px] font-mono">
-            <span className="status-dot-pending" />
-            <span>{lang === "es" ? "En Desarrollo · Alpha Privada" : "Confidential Development · Private Alpha"}</span>
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-300 text-[11px] font-mono">
+            <span className="status-dot-active" />
+            <span>{lang === "es" ? "Novedad · En producción · erydas.vercel.app" : "What's New · Live · erydas.vercel.app"}</span>
           </div>
         </div>
 
-        {/* Hero Banner */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-12 border-b border-[rgba(255,255,255,0.08)]">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#051311] p-2 border border-emerald-500/30 shadow-xl flex items-center justify-center">
-                <Image src="/eridas-logo.svg" alt="Eridas" width={42} height={42} className="object-contain" />
+              <div className="w-14 h-14 rounded-2xl overflow-hidden shadow-xl shrink-0">
+                <Image src="/eridas-logo.svg" alt="Eridas" width={56} height={56} className="object-contain" />
               </div>
               <div>
                 <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white">
                   Eridas
                 </h1>
-                <p className="text-xs font-mono text-emerald-400 mt-0.5">eridas.sh · Autonomous AI Agent Defense &amp; Security Fabric</p>
+                <p className="text-xs font-mono text-teal-300 mt-0.5">
+                  erydas.vercel.app · {lang === "es" ? "Software auto-reparable y determinista" : "Deterministic self-healing software"}
+                </p>
               </div>
             </div>
 
             <p className="text-lg text-white/80 leading-relaxed max-w-3xl mt-6">
               {lang === "es"
-                ? "La capa de defensa criptográfica para agentes de inteligencia artificial y entornos autónomos. Eridas intercepta inyecciones de prompt maliciosas, aísla llamadas a herramientas críticas mediante zero-trust MCP containment y genera firmas auditables de procedencia para cada decisión autónoma."
-                : "The cryptographic defense fabric for autonomous AI agents and execution runtimes. Eridas intercepts indirect prompt injections, sandboxes critical tool calls via zero-trust MCP proxy containment, and stamps tamper-proof cryptographic audit trails for every agentic action."}
+                ? "La forma más simple de mantener las dependencias al día. Eridas es seguridad de dependencias npm de código abierto, con API Cloud, SDK TypeScript y MCP. Lee las versiones exactas del package-lock.json, las contrasta con avisos divulgados en OSV y aplica el menor bump verificado. La IA explica hallazgos confirmados; nunca inventa vulnerabilidades ni elige versiones."
+                : "The easiest way to keep your dependencies up to date. Eridas is open-source, AI-first npm dependency security with a Cloud API, TypeScript SDK, and MCP. It reads exact lockfile versions, matches them to disclosed OSV advisories, and applies the smallest verified bump. AI explains confirmed findings; it never invents vulns or picks versions."}
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8">
               <a
-                href="#waitlist"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium text-black bg-emerald-400 hover:bg-emerald-300 font-mono shadow-lg shadow-emerald-500/25 transition"
+                href="https://erydas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium text-black bg-[#C9F5F7] hover:bg-white font-mono shadow-lg shadow-teal-500/15 transition"
               >
-                <span>{lang === "es" ? "Unirse a la Lista de Espera Alpha" : "Join Alpha Waitlist"}</span>
+                <span>{lang === "es" ? "Abrir erydas.vercel.app" : "Open erydas.vercel.app"}</span>
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                   <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <span className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-xs font-mono text-white/60 bg-white/5 border border-white/10">
-                🔒 {lang === "es" ? "Lanzamiento Previsto: Q4 2026" : "Target Deployment: Q4 2026"}
-              </span>
+              <a
+                href="https://erydas.vercel.app/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-mono text-teal-200 bg-teal-500/10 border border-teal-500/25 hover:bg-teal-500/15 transition"
+              >
+                {lang === "es" ? "API y SDK" : "API & SDK"}
+              </a>
+              <a
+                href="https://erydas.vercel.app/scan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-mono text-white/70 bg-white/5 border border-white/10 hover:text-white transition"
+              >
+                {lang === "es" ? "Escanear un sitio" : "Scan a site"}
+              </a>
             </div>
           </div>
 
-          {/* Security Architecture Box */}
-          <div className="lg:col-span-4 glass-panel p-6 rounded-2xl border border-emerald-500/20">
-            <h3 className="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-4">
-              {lang === "es" ? "Capas de Seguridad" : "Defense Matrix"}
+          <div className="lg:col-span-4 glass-panel p-6 rounded-2xl border border-teal-500/20">
+            <h3 className="text-xs font-mono uppercase tracking-widest text-teal-300 mb-4">
+              {lang === "es" ? "Cómo funciona" : "How it works"}
             </h3>
             <ul className="space-y-3 font-mono text-xs text-white/80">
               <li className="flex justify-between border-b border-white/5 pb-1.5">
-                <span className="text-white/60">L1: Firewall de Entrada</span>
-                <span className="text-emerald-400 font-semibold">Prompt Sanitization</span>
+                <span className="text-white/60">01 Lockfile</span>
+                <span className="text-teal-300 font-semibold">Exact versions</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-1.5">
-                <span className="text-white/60">L2: Contención MCP</span>
-                <span className="text-emerald-400 font-semibold">Zero-Trust Sandbox</span>
+                <span className="text-white/60">02 OSV</span>
+                <span className="text-teal-300 font-semibold">Disclosed only</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-1.5">
-                <span className="text-white/60">L3: Auditoría</span>
-                <span className="text-emerald-400 font-semibold">Cryptographic Trail</span>
+                <span className="text-white/60">03 Plan</span>
+                <span className="text-teal-300 font-semibold">Min safe bump</span>
               </li>
               <li className="flex justify-between border-b border-white/5 pb-1.5">
-                <span className="text-white/60">L4: Gobernanza</span>
-                <span className="text-emerald-400 font-semibold">Policy As Code</span>
+                <span className="text-white/60">04 Approve</span>
+                <span className="text-teal-300 font-semibold">TTY / --yes / --force</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-white/60">Soberanía</span>
-                <span className="text-emerald-400 font-semibold">On-Prem / Cloud EC</span>
+                <span className="text-white/60">05 Verify</span>
+                <span className="text-teal-300 font-semibold">Rescan + checks</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-emerald-500/20">
+          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-teal-500/20">
             <div className="card-glow-emerald absolute inset-0 pointer-events-none" />
-            <div className="text-xl mb-4">🛡️</div>
+            <div className="text-xl mb-4">📦</div>
             <h3 className="text-base font-semibold text-white mb-2">
-              {lang === "es" ? "Blindaje contra Prompt Injection" : "Prompt Injection Armor"}
+              {lang === "es" ? "CLI de código abierto" : "Open-source CLI"}
             </h3>
             <p className="text-xs text-white/70 leading-relaxed">
               {lang === "es"
-                ? "Detección y neutralización en tiempo real de inyecciones indirectas ocultas en emails, PDFs, llamadas de API y datos de navegación no confiables antes de que alcancen el modelo."
-                : "Real-time semantic filtering of indirect and recursive prompt injections embedded in inbound web content, emails, and third-party documents before model execution."}
+                ? "El paquete eridas no requiere cuenta. Escanear, planificar un fix, inicializar CI. npm con package-lock.json v2/v3. pnpm y Yarn se rechazan de forma explícita."
+                : "The eridas package needs no account. Scan, plan a fix, scaffold CI. npm with package-lock.json v2/v3. pnpm and Yarn are rejected clearly, not silently approximated."}
             </p>
           </div>
 
           <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-cyan-500/20">
             <div className="card-glow-indigo absolute inset-0 pointer-events-none" />
-            <div className="text-xl mb-4">🔐</div>
+            <div className="text-xl mb-4">🔗</div>
             <h3 className="text-base font-semibold text-white mb-2">
-              {lang === "es" ? "Proxy MCP de Confianza Cero" : "Zero-Trust MCP Proxy"}
+              {lang === "es" ? "GitHub App · escanear, corregir, fusionar" : "GitHub App · scan, fix, merge"}
             </h3>
             <p className="text-xs text-white/70 leading-relaxed">
               {lang === "es"
-                ? "Cada invocación de herramienta (ejecución de shell, lectura de base de datos, transacción bancaria) se evalúa contra políticas deterministas antes de ser autorizada."
-                : "Intercepts every Model Context Protocol tool invocation, verifying authorization tokens, parameter boundaries, and output toxicity before release."}
+                ? "Instala la GitHub App, sincroniza repos y abre PRs de corrección deterministas en un worktree aislado. Ciclo: queued → running → open → merged. Nunca empuja a la rama por defecto."
+                : "Install the GitHub App, sync repos, and open deterministic fix PRs in an isolated worktree. Lifecycle: queued → running → open → merged. Never pushes to the default branch."}
             </p>
           </div>
 
           <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-purple-500/20">
             <div className="card-glow-purple absolute inset-0 pointer-events-none" />
-            <div className="text-xl mb-4">📜</div>
+            <div className="text-xl mb-4">🛠️</div>
             <h3 className="text-base font-semibold text-white mb-2">
-              {lang === "es" ? "Firma Inmutable de Procedencia" : "Immutable Audit Chain"}
+              {lang === "es" ? "API, SDK y MCP" : "API, SDK, and MCP"}
             </h3>
             <p className="text-xs text-white/70 leading-relaxed">
               {lang === "es"
-                ? "Registro criptográfico inalterable de cada token de pensamiento, herramienta invocada y resultado devuelto, facilitando cumplimiento legal y auditorías judiciales."
-                : "Appends high-entropy cryptographic hashes to all agent thoughts, tool side-effects, and outputs, providing forensic compliance for regulated enterprises."}
+                ? "API headless /api/v1 (scans, findings, remediations, sync, git-status, package-root, long-poll ?wait=true). SDK @eridas/cloud-sdk. MCP @eridas/mcp. UI Guided o Dev — la misma verdad."
+                : "Headless /api/v1 (scans, findings, remediations, repo sync, git-status, package-root, long-poll ?wait=true). SDK @eridas/cloud-sdk. MCP @eridas/mcp. Guided or Dev UI — the same truth."}
             </p>
           </div>
         </div>
 
-        {/* Waitlist Form Section */}
-        <div id="waitlist" className="glass-panel p-8 sm:p-12 rounded-2xl border border-emerald-500/30 max-w-2xl mx-auto text-center mb-16">
-          <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 mx-auto flex items-center justify-center text-xl mb-4">
-            ⚡
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-teal-500/20">
+            <div className="card-glow-emerald absolute inset-0 pointer-events-none" />
+            <div className="text-xl mb-4">🛡️</div>
+            <h3 className="text-base font-semibold text-white mb-2">
+              {lang === "es" ? "Escaneos Tinfoil (L1–L4)" : "Tinfoil live-site scans (L1–L4)"}
+            </h3>
+            <p className="text-xs text-white/70 leading-relaxed">
+              {lang === "es"
+                ? "L1 Superficie (cabeceras, CSP, robots/llms.txt). L2 Exposición (default: .env, secretos, OpenAPI). L3 Cadena de suministro (OSV). L4 Reconstrucción (REA, solo local). Cada nivel incluye los anteriores."
+                : "L1 Surface (headers, CSP, robots/llms.txt). L2 Exposure (default: .env, secrets, OpenAPI). L3 Supply chain (OSV). L4 Reconstruction (REA, local only). Each level includes the ones below."}
+            </p>
           </div>
-          <h2 className="text-2xl font-bold text-white mb-3">
-            {lang === "es" ? "Acceso Anticipado Confidencial" : "Request Confidential Access"}
+
+          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-cyan-500/20">
+            <div className="card-glow-indigo absolute inset-0 pointer-events-none" />
+            <div className="text-xl mb-4">⚖️</div>
+            <h3 className="text-base font-semibold text-white mb-2">
+              {lang === "es" ? "OSV es la fuente de verdad" : "OSV is the source of truth"}
+            </h3>
+            <p className="text-xs text-white/70 leading-relaxed">
+              {lang === "es"
+                ? "Solo avisos divulgados. El lockfile decide lo instalado. La IA opcional explica hallazgos confirmados y falla en suave si no hay modelo — nunca inventa CVEs ni elige la versión destino."
+                : "Disclosed advisories only. The lockfile decides what is installed. Optional AI explains confirmed findings and soft-fails without a model — it never invents CVEs or chooses the target version."}
+            </p>
+          </div>
+
+          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden border border-purple-500/20">
+            <div className="card-glow-purple absolute inset-0 pointer-events-none" />
+            <div className="text-xl mb-4">✅</div>
+            <h3 className="text-base font-semibold text-white mb-2">
+              {lang === "es" ? "Fix con aprobación y rollback" : "Approval-first fix with rollback"}
+            </h3>
+            <p className="text-xs text-white/70 leading-relaxed">
+              {lang === "es"
+                ? "Backup, rewrite de package.json, lockfile con --ignore-scripts, rescan y comandos de verificación. Cualquier fallo restaura ambos archivos. --force omite el prompt, no las comprobaciones. Majors requieren --allow-major."
+                : "Backup, rewrite package.json, regenerate the lockfile with --ignore-scripts, rescan, then run verification commands. Any failure restores both files. --force skips the prompt only, not integrity checks. Majors need --allow-major."}
+            </p>
+          </div>
+        </div>
+
+        <div className="glass-panel p-8 rounded-2xl border border-teal-500/20 mb-16">
+          <div className="flex items-center justify-between mb-4 border-b border-white/10 pb-4">
+            <span className="text-xs font-mono text-white/50">eridas · CLI + Cloud</span>
+            <span className="text-[11px] font-mono text-teal-300 bg-teal-500/10 px-2 py-0.5 rounded">npx eridas scan .</span>
+          </div>
+
+          <pre className="font-mono text-xs leading-6 text-white/80 overflow-x-auto bg-black/60 p-4 rounded-xl border border-white/5">
+{`# Open-source CLI — no account
+npx eridas scan .
+npx eridas fix . --dry-run
+npx eridas init . --mode fix
+npx eridas tinfoil https://example.com --level 2
+npx eridas scan . --ai --format json
+
+# Eridas Cloud
+eridas auth login
+eridas cloud repos
+eridas cloud scan --repo-id <uuid> --wait
+
+import { EridasCloudClient } from "@eridas/cloud-sdk"`}
+          </pre>
+        </div>
+
+        <div className="glass-panel p-8 rounded-2xl border border-white/10 mb-16">
+          <h2 className="text-lg font-semibold text-white mb-4">
+            {lang === "es" ? "Superficie completa" : "Full surface"}
           </h2>
-          <p className="text-xs text-white/70 mb-8 max-w-md mx-auto leading-relaxed">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono text-white/70">
+            <a href="https://erydas.vercel.app/how-it-works" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /how-it-works →
+            </a>
+            <a href="https://erydas.vercel.app/docs" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /docs · API & SDK →
+            </a>
+            <a href="https://erydas.vercel.app/commands" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /commands →
+            </a>
+            <a href="https://erydas.vercel.app/scan-levels" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /scan-levels →
+            </a>
+            <a href="https://erydas.vercel.app/agents" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /agents · MCP & SKILL.md →
+            </a>
+            <a href="https://erydas.vercel.app/security" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /security →
+            </a>
+            <a href="https://erydas.vercel.app/llms.txt" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /llms.txt →
+            </a>
+            <a href="https://erydas.vercel.app/login" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+              /login · Cloud dashboard →
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center py-12 border-t border-[rgba(255,255,255,0.08)]">
+          <h2 className="text-2xl font-bold text-white mb-4">
+            {lang === "es" ? "Escanear en menos de un minuto" : "Scan in under a minute"}
+          </h2>
+          <p className="text-sm text-white/60 max-w-xl mx-auto mb-8">
             {lang === "es"
-              ? "Eridas se encuentra actualmente disponible para instituciones gubernamentales, laboratorios de IA y clientes empresariales seleccionados bajo acuerdo de confidencialidad."
-              : "Eridas is currently deploying under NDA to select security teams, AI laboratories, and regulated infrastructure providers."}
+              ? "Sin cuenta para el CLI. Conecta GitHub para Cloud. Resultados deterministas para humanos, CI y agentes."
+              : "No account for the CLI. Connect GitHub for Cloud. Deterministic results for humans, CI, and coding agents."}
           </p>
-
-          {submitted ? (
-            <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
-              ✓ {lang === "es" ? "Solicitud registrada. El equipo de seguridad de ArcaneTech se pondrá en contacto." : "Request logged. ArcaneTech's security operations team will follow up via encrypted channel."}
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="security@enterprise.com"
-                className="flex-1 bg-black/60 border border-white/15 rounded-lg px-4 py-3 text-xs font-mono text-white placeholder:text-white/40 focus:outline-none focus:border-emerald-400"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 rounded-lg text-xs font-mono font-medium text-black bg-emerald-400 hover:bg-emerald-300 transition shrink-0"
-              >
-                {lang === "es" ? "Solicitar Invitación" : "Request Alpha Invite"}
-              </button>
-            </form>
-          )}
-
-          <p className="text-[11px] font-mono text-white/40 mt-4">
-            {lang === "es" ? "Arquitectura de seguridad zero-trust para entornos de IA de alta criticidad." : "Zero-trust security architecture for mission-critical AI environments."}
-          </p>
+          <a
+            href="https://erydas.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium text-black bg-[#C9F5F7] hover:bg-white shadow-lg shadow-teal-500/10 transition-all"
+          >
+            <span>{lang === "es" ? "Ir a erydas.vercel.app" : "Open erydas.vercel.app"}</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
         </div>
       </main>
     </div>

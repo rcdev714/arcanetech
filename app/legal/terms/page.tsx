@@ -58,8 +58,8 @@ export default function TermsOfUsePage() {
           </h1>
           <p className="text-xs font-mono text-white/50 mt-2">
             {lang === "es"
-              ? "Última actualización: 4 de Octubre de 2026 · Válido para todos los productos de ArcaneTech (Camella, AnyMarkt, Eridas)"
-              : "Last updated: October 4, 2026 · Governing all ArcaneTech software products (Camella, AnyMarkt, Eridas)"}
+              ? "Última actualización: 6 de noviembre de 2026 · Válido para todos los productos de ArcaneTech (Global Data Capital, AnyMarkt, Eridas)"
+              : "Last updated: November 6, 2026 · Governing all ArcaneTech software products (Global Data Capital, AnyMarkt, Eridas)"}
           </p>
         </div>
 
@@ -88,11 +88,11 @@ export default function TermsOfUsePage() {
             </h2>
             <div className="space-y-4 text-xs text-white/70">
               <div className="p-4 rounded-xl bg-black/40 border border-white/5">
-                <h3 className="text-white font-medium mb-1">A. Camella (camella.app)</h3>
+                <h3 className="text-white font-medium mb-1">A. Global Data Capital (globaldatacapital.com)</h3>
                 <p>
                   {lang === "es"
-                    ? "Camella es un motor de resolución e inteligencia societaria que compila información registral pública de entidades jurídicas en Ecuador, México, EE. UU., Brasil, Colombia, Argentina y Chile. Camella no es un organismo emisor oficial ni una entidad gubernamental, sino un sistema intermediario de consolidación analítica. ArcaneTech no asume responsabilidad por inexactitudes originadas en los registros públicos fuente."
-                    : "Camella aggregates and indexes public registry and corporate records across the Americas. Camella is an analytical search engine and is not an official government agency. ArcaneTech disclaims liability for inaccuracies derived from authoritative source public records."}
+                    ? "Global Data Capital (antes Camella / camella.app) es un directorio B2B e inteligencia registral que consolida información pública de personas jurídicas en Ecuador, México, EE. UU., Brasil, Colombia, Argentina y Chile. No es un organismo emisor oficial ni una entidad gubernamental. Es un directorio de empresas, no de personas, y no garantiza resultados ni cumplimiento. ArcaneTech no asume responsabilidad por inexactitudes originadas en los registros públicos fuente."
+                    : "Global Data Capital (formerly Camella / camella.app) aggregates public registry and corporate records across the Americas. It is an analytical company directory, not an official government agency and not a directory of people. ArcaneTech does not guarantee diligence outcomes or compliance and disclaims liability for inaccuracies derived from source public records."}
                 </p>
               </div>
 
@@ -106,11 +106,11 @@ export default function TermsOfUsePage() {
               </div>
 
               <div className="p-4 rounded-xl bg-black/40 border border-white/5">
-                <h3 className="text-white font-medium mb-1">C. Eridas (eridas.sh)</h3>
+                <h3 className="text-white font-medium mb-1">C. Eridas (erydas.vercel.app)</h3>
                 <p>
                   {lang === "es"
-                    ? "Eridas proporciona blindaje de seguridad para la ejecución de agentes de IA y contención MCP. El software se provee bajo modelo de prueba anticipada confidencial sin garantías de cobertura absoluta frente a vectores de ataque de día cero emergentes en modelos fundacionales."
-                    : "Eridas provides runtime containment for AI agent workflows. Pre-release alpha builds are provided strictly under confidential evaluation terms without warranty against emerging zero-day prompt injection primitives."}
+                    ? "Eridas es software de seguridad de dependencias determinista (CLI de código abierto, Cloud API, SDK y MCP). Contrasta versiones exactas del lockfile con avisos divulgados en OSV y propone correcciones verificadas. No garantiza la ausencia de vulnerabilidades no divulgadas, ni cubre ecosistemas no soportados (npm lockfile v2/v3 en la versión actual). El software se ofrece tal cual, sin garantía de cobertura absoluta."
+                    : "Eridas is deterministic dependency-security software (open-source CLI, Cloud API, SDK, and MCP). It matches exact lockfile versions to disclosed OSV advisories and proposes verified fixes. It does not warrant the absence of undisclosed vulnerabilities and does not cover unsupported ecosystems (npm lockfile v2/v3 in the current release). Software is provided as-is, without warranty of complete coverage."}
                 </p>
               </div>
             </div>
@@ -123,8 +123,8 @@ export default function TermsOfUsePage() {
             </h2>
             <p className="text-xs text-white/70 leading-relaxed mb-3">
               {lang === "es"
-                ? "Todos los elementos visuales, logotipos, marcas comerciales ('ArcaneTech', 'Camella', 'AnyMarkt', 'Eridas'), arquitecturas de software, algoritmos, modelos de contexto y código fuente son propiedad exclusiva de ARCANE ECHOS TECHNOLOGIES S.A.S. y se encuentran protegidos por el Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación (Código Ingenios) del Ecuador y tratados internacionales administrados por la OMPI (Organización Mundial de la Propiedad Intelectual)."
-                : "All visual elements, vector assets, trademarks ('ArcaneTech', 'Camella', 'AnyMarkt', 'Eridas'), proprietary code, and system prompts are the exclusive property of ARCANE ECHOS TECHNOLOGIES S.A.S., protected under Ecuador's Código Ingenios and international treaties administered by WIPO."}
+                ? "Todos los elementos visuales, logotipos, marcas comerciales ('ArcaneTech', 'Global Data Capital', 'GDC', 'Camella', 'AnyMarkt', 'Eridas'), arquitecturas de software, algoritmos, modelos de contexto y código fuente son propiedad exclusiva de ARCANE ECHOS TECHNOLOGIES S.A.S. y se encuentran protegidos por el Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación (Código Ingenios) del Ecuador y tratados internacionales administrados por la OMPI (Organización Mundial de la Propiedad Intelectual)."
+                : "All visual elements, vector assets, trademarks ('ArcaneTech', 'Global Data Capital', 'GDC', 'Camella', 'AnyMarkt', 'Eridas'), proprietary code, and system prompts are the exclusive property of ARCANE ECHOS TECHNOLOGIES S.A.S., protected under Ecuador's Código Ingenios and international treaties administered by WIPO."}
             </p>
             <p className="text-xs text-white/70 leading-relaxed">
               {lang === "es"

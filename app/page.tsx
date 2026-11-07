@@ -9,8 +9,9 @@ const COPY = {
   en: {
     nav: {
       products: "Systems",
+      whatsNew: "What's New",
       thesis: "Thesis",
-      security: "Defense",
+      eridas: "Eridas",
       legal: "Legal",
     },
     hero: {
@@ -20,23 +21,52 @@ const COPY = {
         "ArcaneTech is a frontier AI laboratory researching autonomous cognitive systems and deploying high-leverage software products for the global economy.",
       exploreBtn: "Explore Systems",
       thesisBtn: "Our Thesis",
-      systemCount: "2 Production Systems · 1 Upcoming Defense Layer",
+      systemCount: "3 Production Systems · Registry intelligence, forecasting, and self-healing software",
+    },
+    whatsNew: {
+      label: "WHAT'S NEW",
+      title: "Eridas is live",
+      badge: "Now online",
+      url: "erydas.vercel.app",
+      tagline: "The easiest way to keep your dependencies up to date",
+      subhead: "Deterministic self-healing software",
+      desc: "Open-source npm dependency security with a Cloud API, TypeScript SDK, and MCP. Eridas reads exact versions from package-lock.json, matches them to disclosed OSV advisories, and applies the smallest verified direct-dependency bump. Optional AI explains confirmed findings — it never invents vulnerabilities or picks versions.",
+      launch: "Open Eridas",
+      specs: "Full Specification",
+      features: [
+        {
+          title: "Open-source CLI",
+          text: "npx eridas scan . — no account. Same scanner Cloud uses, for any repo, CI job, or agent sandbox.",
+        },
+        {
+          title: "GitHub App · scan, fix, merge",
+          text: "Connect org or repo once. Eridas Cloud scans the lockfile, opens a deterministic fix PR in an isolated worktree, and tracks queued → running → open → merged.",
+        },
+        {
+          title: "Cloud API, SDK, and MCP",
+          text: "Headless /api/v1, @eridas/cloud-sdk, eridas cloud scan --wait, and @eridas/mcp for Cursor and other editors. Same contracts for dashboards, CI, and agents.",
+        },
+        {
+          title: "Tinfoil live-site scans",
+          text: "Level 1 Surface through Level 4 Reconstruction. Headers, secrets, supply-chain OSV, and reconstruction — one graded report. Default is Level 2 Exposure.",
+        },
+      ],
     },
     products: {
       label: "PORTFOLIO",
       title: "Production Systems",
-      sub: "Applied intelligence solving foundational bottlenecks in data verification, forecasting, and agent execution.",
+      sub: "Applied intelligence solving foundational bottlenecks in data verification, forecasting, and dependency security.",
       statusLive: "Live System",
-      statusUpcoming: "Upcoming Research · Alpha",
+      statusNew: "New · Live",
       launch: "Launch System",
       specs: "Full Specification",
-      camella: {
+      gdc: {
         index: "01",
-        name: "Camella",
-        tagline: "Continental Corporate Registry Intelligence",
-        url: "camella.app",
-        desc: "The multi-jurisdiction B2B company directory and registry intelligence system for human analysts and autonomous agents across Ecuador, Mexico, the United States, Brazil, Colombia, Argentina, and Chile. Features native Model Context Protocol (MCP) server integration for Cursor, Claude Code, and Codex.",
-        highlights: ["7 National Registries", "Native MCP Server", "Official Gazette Traceability", "REST API"],
+        name: "Global Data Capital",
+        tagline: "Find and audit any company in the Americas",
+        url: "globaldatacapital.com",
+        desc: "The B2B directory for humans and agents to find and contact companies across Ecuador, Mexico, the United States, Brazil, Colombia, Argentina, and Chile — 803,000+ firms from public registries. Search after sign-in, plus REST API and Global Data Capital MCP. Companies only, never people.",
+        highlights: ["803K+ Companies", "7 Live Markets", "GDC MCP + API", "AI Research Agent"],
       },
       anymarkt: {
         index: "02",
@@ -49,10 +79,10 @@ const COPY = {
       eridas: {
         index: "03",
         name: "Eridas",
-        tagline: "Autonomous AI Agent Runtime Defense",
-        url: "eridas.sh",
-        desc: "Cryptographic security fabric for autonomous agents. Intercepts indirect prompt injection vectors (L1–L4), isolates external MCP tool calls with zero-trust sandboxing, and records immutable provenance trails for enterprise compliance.",
-        highlights: ["Prompt Injection Interception", "Zero-Trust MCP Proxy", "Cryptographic Provenance", "Private Alpha"],
+        tagline: "The easiest way to keep your dependencies up to date",
+        url: "erydas.vercel.app",
+        desc: "Deterministic self-healing software for npm. Open-source CLI plus Eridas Cloud: GitHub App, dashboard, /api/v1, TypeScript SDK, and MCP. OSV is the vulnerability source of truth. AI may explain findings; it never invents vulns or picks versions.",
+        highlights: ["npx eridas scan .", "GitHub Fix PRs", "Cloud API · SDK · MCP", "Tinfoil Site Scans"],
       },
     },
     thesis: {
@@ -72,8 +102,8 @@ const COPY = {
         },
         {
           num: "III",
-          title: "Cryptographic Containment",
-          text: "As agent agency accelerates, containment becomes the decisive security bottleneck. We build deterministic defensive perimeters that keep autonomous runtimes within safe, auditable boundaries.",
+          title: "Deterministic Supply-Chain Truth",
+          text: "As software autonomy grows, dependency risk becomes the decisive bottleneck. We scan exact lockfile versions against disclosed OSV advisories and apply the smallest verified fix — never inventing vulnerabilities or choosing versions by model guesswork.",
         },
       ],
     },
@@ -94,8 +124,9 @@ const COPY = {
   es: {
     nav: {
       products: "Sistemas",
+      whatsNew: "Novedades",
       thesis: "Tesis",
-      security: "Defensa",
+      eridas: "Eridas",
       legal: "Legal",
     },
     hero: {
@@ -105,23 +136,52 @@ const COPY = {
         "ArcaneTech es un laboratorio de IA de frontera dedicado a la investigación de arquitecturas cognitivas y el despliegue de productos de software de alto apalancamiento para la economía global.",
       exploreBtn: "Explorar Sistemas",
       thesisBtn: "Nuestra Tesis",
-      systemCount: "2 Sistemas en Producción · 1 Capa de Defensa en Desarrollo",
+      systemCount: "3 Sistemas en Producción · Inteligencia registral, pronóstico y software auto-reparable",
+    },
+    whatsNew: {
+      label: "NOVEDADES",
+      title: "Eridas ya está en línea",
+      badge: "Disponible ahora",
+      url: "erydas.vercel.app",
+      tagline: "La forma más simple de mantener las dependencias al día",
+      subhead: "Software auto-reparable y determinista",
+      desc: "Seguridad de dependencias npm de código abierto, con API Cloud, SDK TypeScript y MCP. Eridas lee las versiones exactas del package-lock.json, las contrasta con avisos divulgados en OSV y aplica el menor bump verificado en dependencias directas. La IA opcional explica hallazgos confirmados: nunca inventa vulnerabilidades ni elige versiones.",
+      launch: "Abrir Eridas",
+      specs: "Especificación Completa",
+      features: [
+        {
+          title: "CLI de código abierto",
+          text: "npx eridas scan . — sin cuenta. El mismo escáner que usa Cloud, en cualquier repo, CI o sandbox de agente.",
+        },
+        {
+          title: "GitHub App · escanear, corregir, fusionar",
+          text: "Conecta la org o el repo una vez. Eridas Cloud escanea el lockfile, abre un PR de corrección determinista en un worktree aislado y sigue queued → running → open → merged.",
+        },
+        {
+          title: "API Cloud, SDK y MCP",
+          text: "API headless /api/v1, @eridas/cloud-sdk, eridas cloud scan --wait y @eridas/mcp para Cursor y otros editores. Los mismos contratos para dashboards, CI y agentes.",
+        },
+        {
+          title: "Escaneos Tinfoil de sitios en vivo",
+          text: "Nivel 1 Superficie hasta Nivel 4 Reconstrucción. Cabeceras, secretos, cadena de suministro OSV y reconstrucción — un informe con nota. El predeterminado es Nivel 2 Exposición.",
+        },
+      ],
     },
     products: {
       label: "PORTAFOLIO",
       title: "Sistemas en Producción",
-      sub: "Inteligencia aplicada que resuelve cuellos de botella fundamentales en verificación de datos, pronóstico y ejecución de agentes.",
+      sub: "Inteligencia aplicada que resuelve cuellos de botella en verificación de datos, pronóstico y seguridad de dependencias.",
       statusLive: "Sistema en Producción",
-      statusUpcoming: "Investigación en Curso · Alpha",
+      statusNew: "Nuevo · En vivo",
       launch: "Abrir Sistema",
       specs: "Especificación Completa",
-      camella: {
+      gdc: {
         index: "01",
-        name: "Camella",
-        tagline: "Inteligencia Registral y Directorio Corporativo Continental",
-        url: "camella.app",
-        desc: "El sistema B2B multi-jurisdicción para que analistas y agentes de IA consulten, auditen y verifiquen empresas en Ecuador, México, Estados Unidos, Brasil, Colombia, Argentina y Chile. Incluye servidor nativo Model Context Protocol (MCP) para Cursor, Claude Code y Codex.",
-        highlights: ["7 Registros Oficiales", "Servidor MCP Nativo", "Trazabilidad Registral", "API REST"],
+        name: "Global Data Capital",
+        tagline: "Encuentre y audite cualquier empresa en las Américas",
+        url: "globaldatacapital.com",
+        desc: "El directorio B2B para que humanos y agentes encuentren y contacten empresas en Ecuador, México, Estados Unidos, Brasil, Colombia, Argentina y Chile — más de 803.000 sociedades desde registros públicos. Búsqueda tras iniciar sesión, más API REST y Global Data Capital MCP. Solo empresas, nunca personas.",
+        highlights: ["803K+ Empresas", "7 Mercados en Vivo", "MCP y API GDC", "Agente de Investigación"],
       },
       anymarkt: {
         index: "02",
@@ -134,10 +194,10 @@ const COPY = {
       eridas: {
         index: "03",
         name: "Eridas",
-        tagline: "Seguridad y Blindaje de Agentes Autónomos de IA",
-        url: "eridas.sh",
-        desc: "Capa de defensa criptográfica para agentes de IA autónomos. Intercepta inyecciones de prompt indirectas (L1–L4), aísla llamadas a herramientas MCP mediante sandbox zero-trust y genera pistas forenses de procedencia inmutables.",
-        highlights: ["Defensa Anti-Prompt Injection", "Proxy MCP Zero-Trust", "Firma Forense", "Alpha Privada"],
+        tagline: "La forma más simple de mantener las dependencias al día",
+        url: "erydas.vercel.app",
+        desc: "Software auto-reparable y determinista para npm. CLI de código abierto más Eridas Cloud: GitHub App, dashboard, /api/v1, SDK TypeScript y MCP. OSV es la fuente de verdad de vulnerabilidades. La IA puede explicar hallazgos; nunca inventa vulns ni elige versiones.",
+        highlights: ["npx eridas scan .", "PRs de corrección en GitHub", "API Cloud · SDK · MCP", "Escaneos Tinfoil"],
       },
     },
     thesis: {
@@ -157,8 +217,8 @@ const COPY = {
         },
         {
           num: "III",
-          title: "Contención Criptográfica",
-          text: "A medida que la autonomía de los agentes crece, la contención se convierte en el cuello de botella decisivo. Desarrollamos perímetros defensivos que aseguran que los agentes operen dentro de límites verificables y auditables.",
+          title: "Verdad Determinista de la Cadena de Suministro",
+          text: "A medida que crece la autonomía del software, el riesgo de dependencias se vuelve el cuello de botella decisivo. Contrastamos versiones exactas del lockfile con avisos OSV divulgados y aplicamos la corrección verificada más pequeña — sin inventar vulnerabilidades ni elegir versiones por conjetura del modelo.",
         },
       ],
     },
@@ -203,12 +263,15 @@ export default function HomePage() {
             <a href="#systems" className="hover:text-white transition">
               {t.nav.products}
             </a>
+            <a href="#whats-new" className="hover:text-white transition">
+              {t.nav.whatsNew}
+            </a>
             <a href="#thesis" className="hover:text-white transition">
               {t.nav.thesis}
             </a>
             <Link href="/products/eridas" className="hover:text-white transition flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot" />
-              {t.nav.security}
+              {t.nav.eridas}
             </Link>
             <a href="#governance" className="hover:text-white transition">
               {t.nav.legal}
@@ -287,7 +350,79 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Systems Showcase (2 Live + 1 Upcoming) ── */}
+      {/* ── What's New: Eridas ── */}
+      <section id="whats-new" className="py-24 border-b border-white/[0.06]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-8 border-b border-white/[0.06]">
+            <div>
+              <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-teal-400 mb-2">
+                {t.whatsNew.label}
+              </p>
+              <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-white">
+                {t.whatsNew.title}
+              </h2>
+            </div>
+            <p className="text-xs font-mono text-zinc-500">{t.whatsNew.url}</p>
+          </div>
+
+          <div className="luxury-card rounded-xl p-8 sm:p-10 border-teal-500/20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+                    <Image src="/eridas-logo.svg" alt="Eridas" width={48} height={48} className="object-contain" />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <h3 className="text-2xl font-medium tracking-tight text-white">Eridas</h3>
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-teal-500/10 text-teal-300 border border-teal-500/25">
+                        <span className="w-1 h-1 rounded-full bg-teal-300 pulse-dot" />
+                        {t.whatsNew.badge}
+                      </span>
+                    </div>
+                    <p className="text-xs text-zinc-400 font-mono mt-0.5">{t.whatsNew.tagline}</p>
+                    <p className="text-[11px] text-teal-400/90 font-mono mt-0.5">{t.whatsNew.subhead}</p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-zinc-300 leading-relaxed max-w-2xl mb-8">
+                  {t.whatsNew.desc}
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {t.whatsNew.features.map((feature) => (
+                    <div key={feature.title} className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-4">
+                      <h4 className="text-xs font-medium text-white mb-1.5">{feature.title}</h4>
+                      <p className="text-[11px] text-zinc-400 leading-relaxed">{feature.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end lg:items-end">
+                <a
+                  href="https://erydas.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono font-medium text-black bg-[#C9F5F7] hover:bg-white transition"
+                >
+                  <span>{t.whatsNew.launch}</span>
+                  <span className="text-[10px]">↗</span>
+                </a>
+                <Link
+                  href="/products/eridas"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono text-zinc-400 hover:text-white bg-white/[0.02] border border-white/[0.06] hover:border-white/20 transition"
+                >
+                  <span>{t.whatsNew.specs}</span>
+                  <span>→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Systems Showcase ── */}
       <section id="systems" className="py-24 border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-16 pb-8 border-b border-white/[0.06]">
@@ -305,34 +440,34 @@ export default function HomePage() {
           </div>
 
           <div className="space-y-8">
-            {/* System 01: Camella */}
+            {/* System 01: Global Data Capital */}
             <div className="luxury-card rounded-xl p-8 sm:p-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-white p-2 border border-white/20 flex items-center justify-center shrink-0">
-                      <Image src="/camella-logo.svg" alt="Camella" width={32} height={32} className="object-contain" />
+                    <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+                      <Image src="/gdc-logo.svg" alt="Global Data Capital" width={48} height={48} className="object-contain" />
                     </div>
                     <div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xs font-mono text-zinc-500">{t.products.camella.index}</span>
-                        <h3 className="text-2xl font-medium tracking-tight text-white">{t.products.camella.name}</h3>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <span className="text-xs font-mono text-zinc-500">{t.products.gdc.index}</span>
+                        <h3 className="text-2xl font-medium tracking-tight text-white">{t.products.gdc.name}</h3>
                         <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                           <span className="w-1 h-1 rounded-full bg-emerald-400" />
                           {t.products.statusLive}
                         </span>
                       </div>
-                      <p className="text-xs text-zinc-400 font-mono mt-0.5">{t.products.camella.tagline}</p>
+                      <p className="text-xs text-zinc-400 font-mono mt-0.5">{t.products.gdc.tagline}</p>
                     </div>
                   </div>
 
                   <p className="text-sm text-zinc-300 leading-relaxed max-w-2xl mb-6">
-                    {t.products.camella.desc}
+                    {t.products.gdc.desc}
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {t.products.camella.highlights.map((h, i) => (
-                      <span key={i} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
+                    {t.products.gdc.highlights.map((h) => (
+                      <span key={h} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
                         {h}
                       </span>
                     ))}
@@ -341,16 +476,16 @@ export default function HomePage() {
 
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end lg:items-end">
                   <a
-                    href="https://camella.app/"
+                    href="https://globaldatacapital.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono font-medium text-black bg-white hover:bg-zinc-200 transition"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono font-medium text-black bg-[#EBF212] hover:bg-[#f4f86a] transition"
                   >
                     <span>{t.products.launch}</span>
                     <span className="text-[10px]">↗</span>
                   </a>
                   <Link
-                    href="/products/camella"
+                    href="/products/gdc"
                     className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono text-zinc-400 hover:text-white bg-white/[0.02] border border-white/[0.06] hover:border-white/20 transition"
                   >
                     <span>{t.products.specs}</span>
@@ -386,8 +521,8 @@ export default function HomePage() {
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {t.products.anymarkt.highlights.map((h, i) => (
-                      <span key={i} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
+                    {t.products.anymarkt.highlights.map((h) => (
+                      <span key={h} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
                         {h}
                       </span>
                     ))}
@@ -415,21 +550,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* System 03: Eridas (Upcoming AI Defense Layer) */}
-            <div className="luxury-card rounded-xl p-8 sm:p-10 border-white/[0.12]">
+            {/* System 03: Eridas */}
+            <div className="luxury-card rounded-xl p-8 sm:p-10 border-teal-500/15">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-[#051311] p-2 border border-emerald-500/30 flex items-center justify-center shrink-0">
-                      <Image src="/eridas-logo.svg" alt="Eridas" width={32} height={32} className="object-contain" />
+                    <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+                      <Image src="/eridas-logo.svg" alt="Eridas" width={48} height={48} className="object-contain" />
                     </div>
                     <div>
-                      <div className="flex items-center gap-3">
+                      <div className="flex flex-wrap items-center gap-3">
                         <span className="text-xs font-mono text-zinc-500">{t.products.eridas.index}</span>
                         <h3 className="text-2xl font-medium tracking-tight text-white">{t.products.eridas.name}</h3>
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-zinc-500/10 text-zinc-300 border border-zinc-500/20">
-                          <span className="w-1 h-1 rounded-full bg-amber-400" />
-                          {t.products.statusUpcoming}
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-teal-500/10 text-teal-300 border border-teal-500/25">
+                          <span className="w-1 h-1 rounded-full bg-teal-300" />
+                          {t.products.statusNew}
                         </span>
                       </div>
                       <p className="text-xs text-zinc-400 font-mono mt-0.5">{t.products.eridas.tagline}</p>
@@ -441,8 +576,8 @@ export default function HomePage() {
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {t.products.eridas.highlights.map((h, i) => (
-                      <span key={i} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
+                    {t.products.eridas.highlights.map((h) => (
+                      <span key={h} className="text-[11px] font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/[0.06] text-zinc-400">
                         {h}
                       </span>
                     ))}
@@ -450,13 +585,15 @@ export default function HomePage() {
                 </div>
 
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end lg:items-end">
-                  <Link
-                    href="/products/eridas#waitlist"
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono font-medium text-emerald-400 bg-emerald-500/10 border border-emerald-500/25 hover:bg-emerald-500/15 transition"
+                  <a
+                    href="https://erydas.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono font-medium text-black bg-[#C9F5F7] hover:bg-white transition"
                   >
-                    <span>Request Alpha</span>
-                    <span>→</span>
-                  </Link>
+                    <span>{t.products.launch}</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
                   <Link
                     href="/products/eridas"
                     className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-xs font-mono text-zinc-400 hover:text-white bg-white/[0.02] border border-white/[0.06] hover:border-white/20 transition"
@@ -487,8 +624,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {t.thesis.pillars.map((p, i) => (
-              <div key={i} className="hairline-border p-8 rounded-xl bg-white/[0.01]">
+            {t.thesis.pillars.map((p) => (
+              <div key={p.num} className="hairline-border p-8 rounded-xl bg-white/[0.01]">
                 <span className="text-xs font-mono text-zinc-500 mb-4 block">{p.num}</span>
                 <h3 className="text-base font-medium text-white mb-3 tracking-tight">{p.title}</h3>
                 <p className="text-xs text-zinc-400 leading-relaxed">{p.text}</p>

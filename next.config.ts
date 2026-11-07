@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/products/camella",
+        destination: "/products/gdc",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

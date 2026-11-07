@@ -71,8 +71,8 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p className="text-xs text-white/70 leading-relaxed mb-3">
               {lang === "es"
-                ? "El responsable del tratamiento de sus datos personales es ARCANE ECHOS TECHNOLOGIES S.A.S. ('ArcaneTech'), constituida bajo la legislación ecuatoriana. Esta política rige para todas las interacciones con nuestras aplicaciones web, servicios de API y plataformas de productos (Camella, AnyMarkt, Eridas)."
-                : "The legal data controller is ARCANE ECHOS TECHNOLOGIES S.A.S. ('ArcaneTech'), an Ecuadorian corporation. This policy applies across our entire software suite, APIs, and product offerings (Camella, AnyMarkt, Eridas)."}
+                ? "El responsable del tratamiento de sus datos personales es ARCANE ECHOS TECHNOLOGIES S.A.S. ('ArcaneTech'), constituida bajo la legislación ecuatoriana. Esta política rige para todas las interacciones con nuestras aplicaciones web, servicios de API y plataformas de productos (Global Data Capital, AnyMarkt, Eridas)."
+                : "The legal data controller is ARCANE ECHOS TECHNOLOGIES S.A.S. ('ArcaneTech'), an Ecuadorian corporation. This policy applies across our entire software suite, APIs, and product offerings (Global Data Capital, AnyMarkt, Eridas)."}
             </p>
             <p className="text-xs text-white/70 leading-relaxed">
               {lang === "es"

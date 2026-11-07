@@ -18,10 +18,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: `${baseUrl}/products/camella`,
+      url: `${baseUrl}/products/gdc`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/camella`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.3,
     },
     {
       url: `${baseUrl}/products/anymarkt`,

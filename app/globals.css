@@ -63,3 +63,54 @@ body {
 .pulse-dot {
   animation: subtle-pulse 3s infinite ease-in-out;
 }
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.hero-glow-1 {
+  background: radial-gradient(ellipse 60% 40% at 50% -10%, rgba(235, 242, 18, 0.12), transparent 70%);
+}
+
+.hero-glow-2 {
+  background: radial-gradient(ellipse 60% 40% at 50% -10%, rgba(59, 130, 246, 0.16), transparent 70%);
+}
+
+.card-glow-indigo {
+  background: radial-gradient(ellipse 80% 60% at 0% 0%, rgba(99, 102, 241, 0.12), transparent 60%);
+}
+
+.card-glow-purple {
+  background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(168, 85, 247, 0.12), transparent 60%);
+}
+
+.card-glow-emerald {
+  background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(16, 185, 129, 0.12), transparent 60%);
+}
+
+.status-dot-active,
+.status-dot-pending {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+.status-dot-active {
+  background: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.18);
+}
+
+.status-dot-pending {
+  background: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.18);
+}
