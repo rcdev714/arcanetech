@@ -6,6 +6,13 @@ Redesign brief for the public laboratory site. Informed by Anthropic `frontend-d
 
 ArcaneTech is an Ecuador-incorporated frontier AI laboratory. The page’s job is institutional gravity: three live instruments, not a founder portfolio.
 
+Motto (hero sentence, both languages, sentence case, period):
+
+- EN: *Intelligence applied to human problems.*
+- ES: *Inteligencia aplicada a problemas humanos.*
+
+Do not use “We turn intelligence into leverage.” The Spanish is the same proposition, not a calque of the old leverage line.
+
 ## Palette
 
 | Token | Hex | Role |
