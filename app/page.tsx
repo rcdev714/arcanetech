@@ -8,7 +8,7 @@ import { motion, useReducedMotion } from "motion/react";
 const COPY = {
   en: {
     kicker: "Arcane Echos Technologies",
-    headline: "We turn intelligence into leverage.",
+    headline: "Intelligence applied to human problems.",
     lede: "A laboratory in the Republic of Ecuador. Three live systems for registry truth, prediction, and self-healing software — used by people and by agents.",
     locus: "Quito · three systems in production",
     openSystems: "Open the systems",
@@ -46,7 +46,7 @@ const COPY = {
   },
   es: {
     kicker: "Arcane Echos Technologies",
-    headline: "Convertimos inteligencia en apalancamiento.",
+    headline: "Inteligencia aplicada a problemas humanos.",
     lede: "Un laboratorio en la República del Ecuador. Tres sistemas en producción: verdad registral, predicción y software auto-reparable — para personas y para agentes.",
     locus: "Quito · tres sistemas en producción",
     openSystems: "Abrir los sistemas",

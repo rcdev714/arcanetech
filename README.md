@@ -1,6 +1,7 @@
 # ArcaneTech
 
-> **We turn intelligence into leverage.**
+> **Intelligence applied to human problems.**  
+> *Inteligencia aplicada a problemas humanos.*
 
 [ArcaneTech](https://arcanetechnologies.org) is a frontier artificial intelligence research and software laboratory. We engineer autonomous cognitive systems, multi-jurisdiction registry intelligence networks, and deterministic dependency-security software for the global economy.
 

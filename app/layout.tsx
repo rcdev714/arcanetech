@@ -25,16 +25,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://arcanetechnologies.org"),
   title: {
-    default: "ArcaneTech | We turn intelligence into leverage",
+    default: "ArcaneTech | Intelligence applied to human problems",
     template: "%s | ArcaneTech",
   },
   description:
-    "Arcane Echos Technologies SAS is a frontier AI laboratory in Ecuador. Live systems: Global Data Capital, Anymarkt, and Eridas.",
+    "Intelligence applied to human problems. Arcane Echos Technologies SAS is a frontier AI laboratory in Ecuador. Live systems: Global Data Capital, Anymarkt, and Eridas.",
   applicationName: "ArcaneTech",
   authors: [{ name: "Arcane Echos Technologies SAS", url: "https://arcanetechnologies.org" }],
   keywords: [
     "ArcaneTech",
     "Arcane Echos Technologies",
+    "Intelligence applied to human problems",
+    "Inteligencia aplicada a problemas humanos",
     "Global Data Capital",
     "Anymarkt",
     "Predict the future. Prove it.",
@@ -59,9 +61,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "ArcaneTech | We turn intelligence into leverage",
+    title: "ArcaneTech | Intelligence applied to human problems",
     description:
-      "A frontier AI laboratory. Global Data Capital, Anymarkt (predict the future, prove it), and Eridas.",
+      "Intelligence applied to human problems. A frontier AI laboratory. Global Data Capital, Anymarkt (predict the future, prove it), and Eridas.",
     url: "https://arcanetechnologies.org",
     siteName: "ArcaneTech",
     images: [
@@ -78,8 +80,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ArcaneTech | We turn intelligence into leverage",
-    description: "Frontier AI laboratory. Global Data Capital, Anymarkt, Eridas.",
+    title: "ArcaneTech | Intelligence applied to human problems",
+    description:
+      "Intelligence applied to human problems. Frontier AI laboratory. Global Data Capital, Anymarkt, Eridas.",
     images: ["/arcanetech-logo.svg"],
   },
   robots: {
@@ -112,8 +115,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         url: "https://arcanetechnologies.org",
         logo: "https://arcanetechnologies.org/arcanetech-logo.svg",
         email: "contact@arcanetechnologies.org",
+        slogan: "Intelligence applied to human problems",
         description:
-          "Frontier AI laboratory developing Global Data Capital, Anymarkt, and Eridas. SAS corporation under Ecuadorian jurisdiction.",
+          "Intelligence applied to human problems. Frontier AI laboratory developing Global Data Capital, Anymarkt, and Eridas. SAS corporation under Ecuadorian jurisdiction.",
         foundingLocation: {
           "@type": "Place",
           address: { "@type": "PostalAddress", addressCountry: "EC" },
